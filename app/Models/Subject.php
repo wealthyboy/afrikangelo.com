@@ -29,7 +29,7 @@ class Subject extends Model
 
     public function sizes()
     {
-       return $this->belongsToMany('App\Size','size_subject');
+       return $this->belongsToMany(Size::class,'size_subject');
     }
 
     public function scopePhotoToArt(Builder $builder){
@@ -38,7 +38,7 @@ class Subject extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('App\Catgeory');
+        return $this->belongsToMany(Catgeory::class);
     }
 
     public function scopeArt(Builder $builder){

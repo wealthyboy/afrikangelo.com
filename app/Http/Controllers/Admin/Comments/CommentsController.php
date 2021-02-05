@@ -6,12 +6,13 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use App\Information;
-use App\Comment;
+use App\Models\Information;
+use App\Models\Comment;
+use App\Models\User;
+
 
 use Auth;
 use App\Http\Helper;
-use App\User;
 use Illuminate\Validation\Rule;
 
 

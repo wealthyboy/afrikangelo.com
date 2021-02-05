@@ -5,16 +5,17 @@ namespace App\Http\Controllers\WebHook;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use App\User;
-use App\Order;
-use App\OrderedProduct;
-use App\Cart;
-use App\Currency;
-use App\Shipping;
-use App\ProductVariation;
-use App\Voucher;
+use App\Models\User;
+use App\Models\Order;
+use App\Models\OrderedProduct;
+use App\Models\Cart;
+use App\Models\Currency;
+use App\Models\Shipping;
+use App\Models\ProductVariation;
+use App\Models\Voucher;
+use App\Models\SystemSetting;
+
 use App\Mail\OrderReceipt;
-use App\SystemSetting;
 
 
 

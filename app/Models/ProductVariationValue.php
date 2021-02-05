@@ -15,24 +15,24 @@ class ProductVariationValue extends Model
     ];
 
     public function product_variation(){
-        return $this->belongsTo('App\ProductVariation');
+        return $this->belongsTo(ProductVariation::class);
     }
 
 
     public function product_variation_attribute(){
-        return $this->belongsTo('App\ProductVariationAttribute');
+        return $this->belongsTo(ProductVariationAttribute::class);
     }
 
     
     public function product(){
-        return $this->belongsTo('App\Product');
+        return $this->belongsTo(Product::class);
     }
 
     public function attribute(){
-        return $this->belongsTo('App\Attribute');
+        return $this->belongsTo(Attribute::class);
     }
 
     public function parent_attribute(){
-        return $this->belongsTo('App\Attribute','attribute_parent_id');
+        return $this->belongsTo(Attribute::class,'attribute_parent_id');
     }
 }

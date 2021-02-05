@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\Uploads;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\SystemSetting;
+use App\Models\SystemSetting;
 
 class UploadsController extends Controller
 {

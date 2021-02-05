@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Admin\Shipping;
 
 use Illuminate\Http\Request;
-use App\Shipping;
 use App\Http\Controllers\Controller;
 
-use App\Activity;
-use App\Http\Helper;
-use App\User;
-
-use App\Location;
+use App\Models\Activity;
+use App\Models\Http\Helper;
+use App\Models\User;
+use App\Models\Shipping;
+use App\Models\Location;
 use Illuminate\Validation\Rule;
 
 

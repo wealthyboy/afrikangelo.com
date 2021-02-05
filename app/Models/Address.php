@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\SystemSetting;
+use App\Models\SystemSetting;
 use Illuminate\Database\Eloquent\Builder;
 
 

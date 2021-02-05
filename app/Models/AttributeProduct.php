@@ -16,12 +16,12 @@ class AttributeProduct extends Model
 
     public function attribute()
     {
-       return $this->belongsTo('App\Attribute');
+       return $this->belongsTo(Attribute::class);
     }
 
     public function product()
     {
-       return $this->belongsTo('App\Product');
+       return $this->belongsTo(Product::class);
     }
    
 }

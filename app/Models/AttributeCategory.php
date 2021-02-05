@@ -23,7 +23,7 @@ class AttributeCategory extends Model
 
    public function children()
    {
-      return $this->hasMany('App\AttributeCategoryChildren','attribute_category_id');
+      return $this->hasMany(AttributeCategoryChildren::class,'attribute_category_id');
    }
     
    public function getNameAttribute()

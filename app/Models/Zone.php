@@ -13,10 +13,10 @@ class Zone extends Model
 	];
     
 	public function shipCompany(){
-		return $this->belongsTo('App\ShipCompany');
+		return $this->belongsTo(ShipCompany::class);
 	}
 	
 	public function  ShipCompanyDetails(){
-		return $this->hasMany('App\ShipCompanyPrice');
+		return $this->hasMany(ShipCompanyPrice::class);
 	}
 }

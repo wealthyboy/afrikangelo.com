@@ -9,6 +9,6 @@ class Newsletter extends Model
     protected $fillable = ['email'];
 
     public function email_list(){
-        return $this->belongsTo('App\EmailList');
+        return $this->belongsTo(EmailList::class);
     }
 }

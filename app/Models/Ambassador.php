@@ -12,9 +12,9 @@ class Ambassador extends Model
     ];
 
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(User::class);
     }
     public function voucher(){
-        return $this->hasOne('App\Voucher');
+        return $this->hasOne(Voucher::class);
     }
 }

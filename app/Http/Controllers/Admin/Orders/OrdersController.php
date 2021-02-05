@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin\Orders;
 
 use Illuminate\Http\Request;
 
-use App\Order;
-use App\User;
-use App\SystemSetting;
-use App\OrderedProduct;
+use App\Models\Order;
+use App\Models\User;
+use App\Models\SystemSetting;
+use App\Models\OrderedProduct;
 use App\Http\Controllers\Controller;
 use App\Http\Helper;
 

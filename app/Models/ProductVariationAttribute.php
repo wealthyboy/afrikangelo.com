@@ -8,11 +8,11 @@ class ProductVariationAttribute extends Model
 {
     
     public function p_attribute(){
-        return $this->belongsTo('App\Attribute','attribute_parent_id');
+        return $this->belongsTo(Attribute::class,'attribute_parent_id');
     }
 
 
     public function attribute(){
-        return $this->belongsTo('App\Attribute','attribute_id');
+        return $this->belongsTo(Attribute::class,'attribute_id');
     }
 }

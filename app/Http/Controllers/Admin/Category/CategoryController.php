@@ -3,14 +3,17 @@
 namespace App\Http\Controllers\Admin\Category;
 
 use Illuminate\Http\Request;
-use App\Category;
 use App\Http\Controllers\Controller;
 
-use App\Activity;
 use App\Http\Helper;
-use App\User;
 use Illuminate\Validation\Rule;
-use App\Attribute;
+use App\Models\Attribute;
+use App\Models\User;
+use App\Models\Activity;
+use App\Models\Category;
+
+
+
 
 
 

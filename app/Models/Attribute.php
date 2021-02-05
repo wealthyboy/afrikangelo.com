@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use App\Traits\HasChildren;
-use App\AttributeCategory;
+use App\Models\AttributeCategory;
 
 
 
@@ -24,22 +24,22 @@ class Attribute extends Model
 
     public function values()
     {
-        return $this->hasMany('App\AttributeProduct','parent_id','id');
+        return $this->hasMany(AttributeProduct::class,'parent_id','id');
     }
 
     public function children()
     {
-        return $this->hasMany('App\Attribute','parent_id','id');
+        return $this->hasMany(Attribute::class,'parent_id','id');
     }
 
     public function parent()
     {
-        return $this->belongsTo('App\Attribute','parent_id','id');
+        return $this->belongsTo(Attribute::class,'parent_id','id');
     }
 
     public function products()
     {
-        return $this->belongsToMany('App\Product')
+        return $this->belongsToMany(Product::class)
                     ->groupBy('attribute_id');
     }
 
@@ -58,12 +58,12 @@ class Attribute extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('App\Category')->withPivot('category_id');
+        return $this->belongsToMany(Category::class)->withPivot('category_id');
     }
 
     public function information()
     {
-        return $this->belongsToMany('App\Information')->withPivot('information_id');
+        return $this->belongsToMany(Information::class)->withPivot('information_id');
     }
 
     public function variation_value()

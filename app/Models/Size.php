@@ -19,13 +19,13 @@ class Size extends Model
 
     public function subjects()
     {
-       return $this->belongsToMany('App\Subject','size_subject');
+       return $this->belongsToMany(Subject::class,'size_subject');
     }
 
 
     public function frames()
     {
-        return $this->belongsToMany('App\Frame','frame_size');
+        return $this->belongsToMany(Frame::class,'frame_size');
     }
 
 

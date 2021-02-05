@@ -3,12 +3,11 @@
 namespace App\Http\Controllers\Admin\Location;
 
 use Illuminate\Http\Request;
-use App\Location;
 use App\Http\Controllers\Controller;
-
-use App\Activity;
+use App\Models\Activity;
+use App\Models\Location;
+use App\Models\User;
 use App\Http\Helper;
-use App\User;
 use Illuminate\Validation\Rule;
 
 

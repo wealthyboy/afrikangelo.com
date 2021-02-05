@@ -3,13 +3,14 @@
 namespace App\Http\Controllers\Admin\Vouchers;
 
 use Illuminate\Http\Request;
-use App\Favorite;
 use App\Http\Controllers\Controller;
-use App\Voucher;
 use Carbon\Carbon;
-use App\Category;
-use App\User;
-use App\Ambassador;
+use App\Models\Category;
+use App\Models\User;
+use App\Models\Voucher;
+use App\Models\Favorite;
+
+
 use App\Http\Helper;
 
 

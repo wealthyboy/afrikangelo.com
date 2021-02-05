@@ -18,7 +18,7 @@ class AttributeCategoryChildren extends Model
 
     public function children()
     {
-        return $this->hasMany('App\AttributeCategory','parent_id','id');
+        return $this->hasMany(AttributeCategory::class,'parent_id','id');
     }
 
 

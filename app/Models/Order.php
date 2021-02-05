@@ -15,19 +15,19 @@ class Order extends Model
 	public $appends = ['ship_price'];
 
 	public function ordered_products(){
-	   return $this->hasMany('App\OrderedProduct');
+	   return $this->hasMany(OrderedProduct::class);
 	}
 
 	public function user(){
-	   return $this->belongsTo('App\User');	
+	   return $this->belongsTo(User::class);	
 	}
 
 	public function address(){
-		return $this->belongsTo('App\Address');	
+		return $this->belongsTo(Address::class);	
 	}
 
 	public function shipping(){
-		return $this->belongsTo('App\Shipping');	
+		return $this->belongsTo(Shipping::class);	
 	}
 
 	public function getShipPriceAttribute(){

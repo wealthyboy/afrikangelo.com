@@ -4,10 +4,11 @@ namespace App\Http\Controllers\Admin\Attributes;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Activity;
+use App\Models\Activity;
+use App\Models\User;
+use App\Models\Attribute;
 use App\Http\Helper;
-use App\User;
-use App\Attribute;
+
 use Illuminate\Validation\Rule;
 
 class AttributesController extends Controller

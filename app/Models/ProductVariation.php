@@ -3,11 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\SystemSetting;
 use App\Traits\FormatPrice;
 use App\Traits\ImageFiles;
 use App\Http\Helper;
-use App\CategoryProductVariation;
+use App\Models\CategoryProductVariation;
+use App\Models\SystemSetting;
+use App\Models\SystemSetting;
+
+
 use App\Filters\ProductsFilter\ProductFilters;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -75,18 +78,18 @@ class ProductVariation extends Model
     
     
     public function product(){
-        return $this->belongsTo('App\Product');
+        return $this->belongsTo(Product);
     }
 
 
     public function categories(){
-        return $this->belongsToMany('App\Category')->withPivot('category_id');
+        return $this->belongsToMany(Category::class)->withPivot('category_id');
     }
 
 
     public function meta_fields()
     {
-		return  $this->belongsToMany('App\Attribute','attribute_product_variation','product_variation_id', 'attribute_id')
+		return  $this->belongsToMany(Attribute::class,'attribute_product_variation','product_variation_id', 'attribute_id')
 					->groupBy('attribute_id')
 					->withPivot([
 						'attribute_id',
@@ -119,13 +122,13 @@ class ProductVariation extends Model
 
     public function product_variation_values()
     {
-        return $this->hasMany('App\ProductVariationValue');
+        return $this->hasMany(ProductVariationValue::class);
     }
 
 
     public function product_variation_attributes()
     {
-        return $this->hasMany('App\ProductVariationAttribute');
+        return $this->hasMany(ProductVariationAttribute::class);
     }
 
 
@@ -144,13 +147,13 @@ class ProductVariation extends Model
     
     public function product_variation_value()
     {
-        return $this->hasOne('App\ProductVariationValue');
+        return $this->hasOne(ProductVariationValue::class);
     }
 
 
     public function product_variation_attribute()
     {
-        return $this->hasOne('App\ProductVariationAttribute');
+        return $this->hasOne(ProductVariationAttribute::class);
     }
 
     public function getRouteKeyName(){
@@ -166,22 +169,22 @@ class ProductVariation extends Model
 
     public function images()
     {
-        return $this->morphMany('App\Image', 'imageable')->orderBy('created_at','asc');
+        return $this->morphMany(Image::class, 'imageable')->orderBy('created_at','asc');
     }
 
     public function img()
     {
-        return $this->hasOne('App\Image','imageable_id','id');
+        return $this->hasOne(Image::class,'imageable_id','id');
     }
 
     public function cart()
     {
-        return $this->hasOne('App\Cart');
+        return $this->hasOne(Cart::class);
     }
 
     public function carts()
     {
-        return $this->hasMany('App\Cart');
+        return $this->hasMany(Cart::class);
     }
 
 

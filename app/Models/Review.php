@@ -10,11 +10,11 @@ class Review extends Model
     protected  $fillable = ['title','user_id','description','image','rating','product_id'];
 
     public function product(){
-       return $this->belongsTo('App\Product');
+       return $this->belongsTo(Product::class);
     }
 
     public function user(){
-        return $this->belongsTo('App\User');
+        return $this->belongsTo(User::class);
     }
 
     public function number_of_occurencies($product_id){

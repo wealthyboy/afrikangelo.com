@@ -3,17 +3,19 @@
 namespace App\Http\Controllers\Admin\Account;
 
 use Illuminate\Http\Request;
-use App\Product;
-use App\OrderedProduct;
-use App\Http\Helper;
-use App\Order;
-use Carbon\Carbon;
-use App\ProductSize;
+use App\Models\Product;
+use App\Models\OrderedProduct;
+use App\Models\Order;
+use App\Models\User;
+use App\Models\SystemSetting;
+use App\Models\ProductVariation;
 
+
+
+
+use App\Http\Helper;
+use Carbon\Carbon;
 use App\Http\Controllers\Controller;
-use App\User;
-use App\SystemSetting;
-use App\ProductVariation;
 
 class AccountsController extends Controller 
 {

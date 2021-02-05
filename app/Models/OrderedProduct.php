@@ -18,7 +18,7 @@ class OrderedProduct extends Model
 
 	
 	public function order(){
-		return $this->belongsTo('App\Order');
+		return $this->belongsTo(Order::class);
 	}
 
 	public function getOrderPriceAttribute(){
@@ -26,7 +26,7 @@ class OrderedProduct extends Model
 	}
 
 	public function product_variation(){
-		return $this->belongsTo('App\ProductVariation','product_variation_id');
+		return $this->belongsTo(ProductVariation::class,'product_variation_id');
 	}
 
 	public  function sum_items($order_id) {   

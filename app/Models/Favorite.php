@@ -12,7 +12,7 @@ class Favorite extends Model
 	
 
 	public function users(){
-        $this->belongsTo('App\User');
+        $this->belongsTo(User::class);
     }
 
 
@@ -23,7 +23,7 @@ class Favorite extends Model
 
 
     public function product_variation(){
-        return $this->belongsTo('App\ProductVariation');
+        return $this->belongsTo(ProductVariation::class);
     }
 
     public function scopeCreateOrDelete(Builder $builder,$user_id,$id){

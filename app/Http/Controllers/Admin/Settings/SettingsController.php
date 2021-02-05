@@ -4,13 +4,15 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests\SystemSettingsRequest;
 
-use App\SystemSetting;
-use App\User;
 use App\Http\Controllers\Controller;
 use App\Http\Flash;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Currency;
-use App\Payment;
+use App\Models\Currency;
+use App\Models\Payment;
+use App\Models\SystemSetting;
+use App\Models\User;
+
+
 
 
 

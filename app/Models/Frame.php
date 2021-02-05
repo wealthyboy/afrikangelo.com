@@ -16,6 +16,6 @@ class Frame extends Model
 
     public function sizes()
     {
-        return $this->belongsToMany('App\Size');
+        return $this->belongsToMany(Size::class);
     }
 }

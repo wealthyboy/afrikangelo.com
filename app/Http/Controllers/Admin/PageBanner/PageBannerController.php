@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin\PageBanner;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\PageBanner;
-use App\SystemSetting;
+use App\Models\PageBanner;
+use App\Models\SystemSetting;
 use Illuminate\Support\Facades\Storage;
 
 

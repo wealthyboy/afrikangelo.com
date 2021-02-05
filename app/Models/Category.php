@@ -37,7 +37,7 @@ class Category extends Model
 
     public function discount()
     {
-        return $this->hasOne('App\Models\Discount');
+        return $this->hasOne(Discount::class);
     }
 
 
@@ -49,13 +49,13 @@ class Category extends Model
 
     public function product_variations()
     {
-        return $this->belongsToMany('App\Models\ProductVariation');
+        return $this->belongsToMany(ProductVariation::class);
     }
 
 
     public function product_variants()
     {
-        return $this->belongsToMany('App\Models\ProductVariation')->whereNotNull('name');
+        return $this->belongsToMany(ProductVariation::class)->whereNotNull('name');
     }
 
 

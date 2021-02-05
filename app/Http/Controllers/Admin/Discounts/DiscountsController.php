@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Admin\Discounts;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Category;
-use App\Discount;
-use App\DiscountProduct;
+use App\Models\Category;
+use App\Models\Discount;
+use App\Models\DiscountProduct;
+use App\Models\Activity;
+use App\Models\User;
+
+
 use App\Http\Helper;
 use Illuminate\Validation\Rule;
-use App\Activity;
-use App\User;
 
 
 class DiscountsController extends Controller

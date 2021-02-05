@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Admin\Permission;
 
-use App\Permission;
-use App\Activity;
 use Illuminate\Http\Request;
-use App\User;
-use App\UserPermission;
+use App\Models\User;
+use App\Models\UserPermission;
+use App\Models\Activity;
+use App\Models\Permission;
+
+
 use App\Http\Controllers\Controller;
 
 

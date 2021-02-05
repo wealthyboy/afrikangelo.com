@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Product;
+use App\Models\Product;
 use App\Traits\FormatPrice;
 use App\Http\Helper;
 
@@ -74,11 +74,11 @@ class Cart extends Model
 	}
 
 	public function product(){
-	  	return $this->belongsTo('App\Product');
+	  	return $this->belongsTo(Product::class);
 	}
 
 	public function product_variation(){
-		return $this->belongsTo('App\ProductVariation');
+		return $this->belongsTo(ProductVariation::class);
     }
 
 

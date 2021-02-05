@@ -20,17 +20,17 @@ class ProductAttribute extends Model
 
     public function attribute()
     {
-        return $this->belongsTo('App\Attribute');
+        return $this->belongsTo(Attribute::class);
     }
     
     public function product()
     {
-        return $this->belongsTo('App\Product');
+        return $this->belongsTo(Product::class);
     }   
 
     public function children()
     {
-        return $this->hasMany('App\ProductAttribute','parent_id','id');
+        return $this->hasMany(ProductAttribute::class,'parent_id','id');
     }
 
     public function isAChild($id)
@@ -46,7 +46,7 @@ class ProductAttribute extends Model
 
     public function parent()
     {
-        return $this->hasOne('App\ProductAttribute','parent_id');
+        return $this->hasOne(ProductAttribute::class,'parent_id');
     }
 
     

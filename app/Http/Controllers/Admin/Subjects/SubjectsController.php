@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Admin\Subjects;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Subject;
-use App\Size;
 use Illuminate\Validation\Rule;
-use App\Activity;
-use App\User;
+use App\Models\Activity;
+use App\Models\User;
+use App\Models\Size;
+use App\Models\Subject;
+
+
 
 
 

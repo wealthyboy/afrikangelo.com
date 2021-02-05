@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin\Brand;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Brand;
-use App\User;
+use App\Models\Brand;
+use App\Models\User;
 
 
 

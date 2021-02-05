@@ -16,10 +16,10 @@ class Discount extends Model
 
     public function category()
     {
-        return $this->belongsTo('App\Category');
+        return $this->belongsTo(Category::class);
     }
 
     public function discount_products(){
-        return $this->hasMany('App\DiscountProduct');
+        return $this->hasMany(DiscountProduct::class);
     }
 }

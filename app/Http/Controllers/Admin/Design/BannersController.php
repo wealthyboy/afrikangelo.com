@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\Design;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Banner;
+use App\Models\Banner;
 use App\Http\Helper;
 use Illuminate\Support\Facades\Storage;
 

@@ -71,7 +71,7 @@ class Product extends Model
 
 	public function variants()
     {
-		return  $this->hasMany('App\ProductVariation')
+		return  $this->hasMany(ProductVariation::class)
 		           ->where(['default'=>false])->whereNotNull('name')
 		           ->orderBy('created_at','asc');
 	}
@@ -79,7 +79,7 @@ class Product extends Model
 
 	public function product_variations()
     {
-		return  $this->hasMany('App\ProductVariation')
+		return  $this->hasMany(ProductVariation::class)
 		           ->where(['default'=>false])
 		           ->orderBy('created_at','asc');
 	}
@@ -87,19 +87,19 @@ class Product extends Model
 
 	public function variant()
 	{
-		return $this->hasOne('App\ProductVariation')->whereDefault(false);
+		return $this->hasOne(ProductVariation::class)->whereDefault(false);
 	}
 
 
 	public function default_variation()
 	{
-		return $this->hasOne('App\ProductVariation')->whereDefault(true);
+		return $this->hasOne(ProductVariation::class)->whereDefault(true);
 	}
 	
 	
 	public function colors()
     {
-        return $this->belongsToMany('App\Attribute')
+        return $this->belongsToMany(Attribute::class)
 		->groupBy('attribute_id')
 		->whereNotNull(['color_code']);
     }
@@ -113,7 +113,7 @@ class Product extends Model
 
 	public function product_variation_values()
     {
-        return $this->hasMany('App\ProductVariationValue');
+        return $this->hasMany(ProductVariationValue::class);
 	}
 
 	

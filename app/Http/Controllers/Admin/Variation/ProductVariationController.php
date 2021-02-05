@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Admin\Variation;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Attribute;
-use App\Product;
-use App\ProductVariation;
-use App\Image;
-use App\AttributeProduct;
+use App\Models\Attribute;
+use App\Models\Product;
+use App\Models\ProductVariation;
+use App\Models\Image;
+use App\Models\AttributeProduct;
 
 
 class ProductVariationController extends Controller

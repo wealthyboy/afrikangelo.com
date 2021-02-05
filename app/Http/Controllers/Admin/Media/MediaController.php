@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Admin\Media;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Image;
-use App\SystemSetting;
+use App\Models\Image;
+use App\Models\SystemSetting;
 use Illuminate\Support\Facades\Storage;
 
 

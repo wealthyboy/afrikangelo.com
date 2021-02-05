@@ -9,7 +9,7 @@ class EmailList extends Model
     protected $fillable = ['name'];
 
     public function news_letters(){
-        return $this->hasMany('App\Newsletter');
+        return $this->hasMany(Newsletter::class);
     }
 }
 

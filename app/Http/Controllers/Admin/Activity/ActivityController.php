@@ -1,13 +1,7 @@
 <?php  namespace App\Http\Controllers\Admin\Activity;
 
 use Illuminate\Http\Request;
-
-
-
-
-use App\Activity;
-
-
+use App\Models\Activity;
 use App\Http\Controllers\Controller;
 
 

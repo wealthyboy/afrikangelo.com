@@ -13,7 +13,7 @@ class State extends Model
     public $timestamps = false;
 
     public function address(){
-        return $this->hasMany('App\Addres');
+        return $this->hasMany(Addres::class);
     }
 
     public function offline_address(){

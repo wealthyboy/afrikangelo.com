@@ -13,17 +13,17 @@ class Location extends Model
 	
     public function children()
     {
-        return $this->hasMany('App\Location','parent_id','id');
+        return $this->hasMany(Location::class,'parent_id','id');
     }
 
     public function shipping()
     {
-        return $this->hasMany('App\Shipping');
+        return $this->hasMany(Shipping::class);
     }
 
     public function shippings()
     {
-        return $this->belongsToMany('App\Location','location_shipping');
+        return $this->belongsToMany(Location::class,'location_shipping');
 
 	}
 }

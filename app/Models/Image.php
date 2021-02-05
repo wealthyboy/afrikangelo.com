@@ -34,7 +34,7 @@ class Image extends Model
 
     public function children()
     {
-        return $this->hasMany('App\Image','parent_id','id');
+        return $this->hasMany(Image::class,'parent_id','id');
     }
 
     public function getImageToShowMAttribute()

@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin\Frames;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Frame;
-use App\Size;
-use App\Activity;
-use App\User;
+use App\Models\Frame;
+use App\Models\Size;
+use App\Models\Activity;
+use App\Models\User;
 use Illuminate\Validation\Rule;
 
 

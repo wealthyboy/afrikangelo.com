@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\States;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\State;
+use App\Models\State;
 
 class StatesController extends Controller
 {

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-use App\Review;
+use App\Models\Review;
 
 class returnsController extends Controller
 {

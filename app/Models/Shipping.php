@@ -21,24 +21,24 @@ class Shipping extends Model
 
     public function children()
     {
-        return $this->hasMany('App\Shipping','parent_id','id');
+        return $this->hasMany(Shipping::class,'parent_id','id');
     }
 
     public function parent()
     {
-        return $this->belongsTo('App\Shipping','parent_id','id');
+        return $this->belongsTo(Shipping::class,'parent_id','id');
     }
 
 
     public function location()
     {
-        return $this->belongsTo('App\Location');
+        return $this->belongsTo(Location::class);
     }
     
 
     public function locations()
     {
-        return $this->belongsToMany('App\Shipping','location_shipping');
+        return $this->belongsToMany(Shipping::class,'location_shipping');
     }
     
 

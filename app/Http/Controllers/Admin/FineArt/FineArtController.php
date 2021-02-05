@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\FineArt;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Product;
+use App\Models\Product;
 
 class FineArtController extends Controller
 {

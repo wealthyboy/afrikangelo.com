@@ -6,20 +6,21 @@ namespace App\Http\Controllers\Admin\Product;
 
 use App\User;
 
-use App\Image;
-use App\Product;
-use App\Activity;
-use App\Category;
-use App\Http\Helper;
-use App\SystemSetting;
-use App\RelatedProduct;
+use App\Models\Image;
+use App\Models\Product;
+use App\Models\Activity;
+use App\Models\Category;
+use App\Models\SystemSetting;
+use App\Models\RelatedProduct;
+use App\Models\AttributeProduct;
+use App\Models\ProductAttribute;
+use App\Models\ProductVariation;
+use App\Models\Subject;
+use App\Models\Http\Helper;
 
-use App\AttributeProduct;
-use App\ProductAttribute;
-use App\ProductVariation;
+
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use App\Subject;
 use Illuminate\Validation\Rule;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;

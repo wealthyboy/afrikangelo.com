@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin\CurrencyRates;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\CurrencyRate;
-use App\Currency;
-use App\SystemSetting;
+use IlluModels\minate\Http\Request;
+use App\Models\CurrencyRate;
+use App\Models\Currency;
+use App\Models\SystemSetting;
 
 class CurrencyRatesController extends Controller
 {

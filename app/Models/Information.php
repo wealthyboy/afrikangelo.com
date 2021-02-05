@@ -32,7 +32,7 @@ class Information extends Model
     
     public function attributes()
     {
-        return $this->belongsToMany('App\Attribute','attribute_information')
+        return $this->belongsToMany(Attribute::class,'attribute_information')
                     ->withPivot('id');
     }
 

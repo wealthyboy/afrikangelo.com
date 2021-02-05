@@ -11,7 +11,7 @@ class UserPermission extends Model
         'permission_id'
     ];
     public function permission(){
-        return $this->belongsTo("App\Permission");
+        return $this->belongsTo(Permission::class);
     }
 
 }

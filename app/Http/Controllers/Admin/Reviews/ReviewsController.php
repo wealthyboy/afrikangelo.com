@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin\Reviews;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Review;
-use App\PageBanner;
+use App\Models\Review;
+use App\Models\PageBanner;
 
 
 class ReviewsController extends Controller

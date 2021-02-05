@@ -9,6 +9,6 @@ class Promo extends Model
     //
 
     public function promo_texts(){
-        return $this->hasMany('App\PromoText');
+        return $this->hasMany(PromoText::class);
     }
 }

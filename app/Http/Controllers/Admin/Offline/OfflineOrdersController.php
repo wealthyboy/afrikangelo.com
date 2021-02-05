@@ -4,14 +4,15 @@ namespace App\Http\Controllers\Admin\Offline;
 
 use Illuminate\Http\Request;
 
-use App\Order;
-use App\User;
-use App\Product;
-use App\Cart;
-use App\OrderedProduct;
+use App\Models\Order;
+use App\Models\User;
+use App\Models\Product;
+use App\Models\Cart;
+use App\Models\OrderedProduct;
+use App\Models\State;
+
 use App\Http\Controllers\Controller;
 use App\Mail\OfflineOrderMail;
-use App\State;
 
 
 
