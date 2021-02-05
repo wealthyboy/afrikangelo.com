@@ -40,7 +40,7 @@ class HomeController extends Controller
             if ( auth()->check()  && auth()->user()->isAdmin()){
                 return view('index',compact('products','posts','banners','sliders')); 
             }
-            return view('underconstruction');
+            return view('underconstruction.index');
         }
     }
 
